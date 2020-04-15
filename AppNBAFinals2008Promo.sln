@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppNBAFinals2008Promo.Android", "AppNBAFinals2008Promo\AppNBAFinals2008Promo.Android\AppNBAFinals2008Promo.Android.csproj", "{3B140E55-2233-4295-AC2C-C13909869D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppNBAFinals2008Promo", "AppNBAFinals2008Promo\AppNBAFinals2008Promo\AppNBAFinals2008Promo.csproj", "{6F570147-9111-463E-87E7-702488C063E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B140E55-2233-4295-AC2C-C13909869D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B140E55-2233-4295-AC2C-C13909869D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B140E55-2233-4295-AC2C-C13909869D06}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3B140E55-2233-4295-AC2C-C13909869D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B140E55-2233-4295-AC2C-C13909869D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B140E55-2233-4295-AC2C-C13909869D06}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F570147-9111-463E-87E7-702488C063E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F570147-9111-463E-87E7-702488C063E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F570147-9111-463E-87E7-702488C063E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6F570147-9111-463E-87E7-702488C063E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F570147-9111-463E-87E7-702488C063E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F570147-9111-463E-87E7-702488C063E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ECC2CCA-F610-43BB-A87A-E337CEE34647}
+	EndGlobalSection
+EndGlobal
