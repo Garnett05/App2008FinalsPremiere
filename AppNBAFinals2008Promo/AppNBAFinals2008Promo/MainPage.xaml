@@ -5,12 +5,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppNBAFinals2008Promo.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="White" Style="{StaticResource header}">
+                <Label Text="NBA FINALS" Style="{StaticResource appTitle}" />
+                <Label Text="The home of the NBA Finals" Style="{StaticResource appSubtitle}" />
+            </StackLayout>
+            <StackLayout Style="{StaticResource content}" >
+                <Label Text="Premiere" Style="{StaticResource premiere}"/>
+                <Label Text="Celtics vs Lakers" Style="{StaticResource finalsTitle}" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="Fundo.jpg" Aspect="AspectFill" HorizontalOptions="Center" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
