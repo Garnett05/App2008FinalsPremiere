@@ -7,6 +7,9 @@
              x:Class="AppNBAFinals2008Promo.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Style x:Key="hea" TargetType="StackLayout" >
+                
+            </Style>
             <Style x:Key="header" TargetType="StackLayout" >
                 <Setter Property="Padding" Value="10" />
                 <Setter Property="Spacing" Value="0" />

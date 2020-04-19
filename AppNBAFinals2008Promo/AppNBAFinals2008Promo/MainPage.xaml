@@ -14,13 +14,12 @@
             <StackLayout Style="{StaticResource content}" >
                 <Label Text="Premiere" Style="{StaticResource premiere}"/>
                 <Label Text="Celtics vs Lakers" Style="{StaticResource finalsTitle}" />
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Image Source="Fundo.jpg" Aspect="AspectFill" HorizontalOptions="Center" />
-                </Grid>
+                <RelativeLayout>
+                    <Image Source="Fundo.jpg" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="relative" />
+                    <Image Source="finals2008.jpg"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=relative, Factor=1, Property=Y, Constant=16}"
+                            />
+                </RelativeLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
