@@ -6,21 +6,65 @@
              mc:Ignorable="d"
              x:Class="AppNBAFinals2008Promo.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout BackgroundColor="White" Style="{StaticResource header}">
-                <Label Text="NBA FINALS" Style="{StaticResource appTitle}" />
-                <Label Text="The home of the NBA Finals" Style="{StaticResource appSubtitle}" />
-            </StackLayout>
-            <StackLayout Style="{StaticResource content}" >
-                <Label Text="Premiere" Style="{StaticResource premiere}"/>
-                <Label Text="Celtics vs Lakers" Style="{StaticResource finalsTitle}" />
-                <RelativeLayout>
-                    <Image Source="Fundo.jpg" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="relative" />
-                    <Image Source="finals2008.jpg"
+        <ScrollView>
+            <StackLayout>
+                <StackLayout BackgroundColor="White" Style="{StaticResource header}">
+                    <Label Text="NBA FINALS" Style="{StaticResource appTitle}" />
+                    <Label Text="The home of the NBA Finals" Style="{StaticResource appSubtitle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource content}" >
+                    <Label Text="Premiere" Style="{StaticResource premiere}"/>
+                    <Label Text="Celtics vs Lakers" Style="{StaticResource finalsTitle}" />
+                    <RelativeLayout>
+                        <Image Source="Fundo.jpg" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="relative" />
+                        <Image Source="finals2008.jpg" x:Name="posterImage"
                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=relative, Factor=1, Property=Y, Constant=16}"
                             />
-                </RelativeLayout>
+                        <Label Text="The 2008 NBA Finals were held June 5 through June 17, 2008, to decide the winner of the 2007–08 NBA season, and conclude the season's playoffs. The Boston Celtics, top-seeded champions of the Eastern Conference, defeated the Los Angeles Lakers, top-seeded champions of the Western Conference, four games to two in a best-of-seven series. This was Boston's first title since 1986 during the Larry Bird era and 17th overall."
+                               x:Name="lblFinals"
+                               HorizontalOptions="Center"
+                               Margin="10"
+                               FontSize="12"
+                               FontFamily="Segoe UI"
+                               TextColor="Black"
+                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=posterImage, Factor=1, Property=Width, Constant=0}"                           
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=posterImage, Factor=1, Property=Y, Constant= 240}"
+                               />
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Spacing="20" Margin="0, 0, 0, 25"
+                                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=lblFinals, Factor=1, Property=Y, Constant=130}"
+                                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=posterImage, Factor=.99, Property=Width, Constant=0}">
+
+                            <StackLayout BackgroundColor="Green">
+                                <Label Text="10h30" TextColor="White" Padding="18, 10"/>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="Green">
+                                <Label Text="10h30" TextColor="White" Padding="18, 10"/>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="Green">
+                                <Label Text="10h30" TextColor="White" Padding="18, 10"/>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="Green">
+                                <Label Text="10h30" TextColor="White" Padding="18, 10"/>
+                            </StackLayout>
+                        </StackLayout>                    
+                        <BoxView HeightRequest="100" WidthRequest="350" Margin="22, 0, 40, 15" BackgroundColor="Green" VerticalOptions="EndAndExpand" HorizontalOptions="Center" CornerRadius="5" x:Name="boxViewPrice"
+                                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=lblFinals, Factor=1, Property=Y, Constant=215}"/>
+                        <StackLayout Orientation="Vertical"
+                                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxViewPrice, Factor= 1, Property= X, Constant= 20}"
+                                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxViewPrice, Factor= 1, Property= Y, Constant= 25}">
+                                     
+                            <Label Text="HALF TICKET" FontSize="14" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="R$ 100,00" FontSize="22" TextColor="White" FontAttributes="Bold" />
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical"
+                                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxViewPrice, Factor= 1, Property= X, Constant= 220}"
+                                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxViewPrice, Factor= 1, Property= Y, Constant= 25}">
+                            <Label Text="FULL TICKET" FontSize="14" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="R$ 200,00" FontSize="22" TextColor="White" FontAttributes="Bold" />
+                        </StackLayout>
+                    </RelativeLayout>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

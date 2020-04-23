@@ -6,10 +6,7 @@
              mc:Ignorable="d"
              x:Class="AppNBAFinals2008Promo.App">
     <Application.Resources>
-        <ResourceDictionary>
-            <Style x:Key="hea" TargetType="StackLayout" >
-                
-            </Style>
+        <ResourceDictionary>            
             <Style x:Key="header" TargetType="StackLayout" >
                 <Setter Property="Padding" Value="10" />
                 <Setter Property="Spacing" Value="0" />
@@ -22,25 +19,27 @@
             </Style>
             <Style x:Key="title" TargetType="Label" >
                 <Setter Property="FontFamily" Value="Segoe UI" />
-                <Setter Property="TextColor" Value="#6A34B0" />
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             </Style>
             <Style x:Key="appTitle" TargetType="Label" BasedOn="{StaticResource title}" >
-                <Setter Property="FontSize" Value="24" />                
+                <Setter Property="FontSize" Value="24" />
             </Style>
             <Style x:Key="appSubtitle" TargetType="Label" BasedOn="{StaticResource title}" >
                 <Setter Property="FontSize" Value="12" />
             </Style>
             <Style x:Key="premiere" TargetType="Label" BasedOn="{StaticResource appSubtitle}" >
                 <Setter Property="TextColor" Value="#947AC4" />
+                <Setter Property="FontAttributes" Value="None" />
                 <Setter Property="HorizontalOptions" Value="Start" />
             </Style>
             <Style x:Key="finalsTitle" TargetType="Label" BasedOn="{StaticResource appSubtitle}" >
                 <Setter Property="TextColor" Value="#FFFFFF" />
                 <Setter Property="FontSize" Value="42" />
                 <Setter Property="VerticalOptions" Value="Center" />
-            </Style>
+            </Style>            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
